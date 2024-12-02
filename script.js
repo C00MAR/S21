@@ -1,4 +1,4 @@
-if (window.location.href.includes('index.html')) {
+if (window.location.href === window.location.origin + '/') {
     const codeVideo = '000';
     const codeLampadaire = '111';
 
