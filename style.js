@@ -1,4 +1,14 @@
-window.onload = init
+setTimeout(function() {
+    const element = document.getElementsByClassName('js-videoStart')[0];
+    element.style.transition = 'opacity 1s';
+    element.style.opacity = '0';
+    setTimeout(function() {
+        element.remove();
+        init();
+    }, 1000);
+}, 5000);
+// 96000
+
 function init() {
   let renderer, canvas
   const dpr = Math.max(1, .5*devicePixelRatio)
@@ -12,9 +22,38 @@ function init() {
   }
   const source = document.querySelector("script[type='x-shader/x-fragment']").textContent
   canvas = document.createElement("canvas")
-  document.title = "😌"
   document.body.innerHTML = ""
+  const container = document.createElement("div")
+  container.classList.add("container")
+  const text = document.createElement("p")
+  text.style.textAlign = "center"
+  text.textContent = "ET L'HOMME CRÉA LE SENS DES MOTS"
+  const input = document.createElement("input")
+  input.type = "text"
+  input.placeholder = "code"
+  input.style.color = "black"
+  input.addEventListener('input', function() {
+    if (this.value === 'Ether') {
+        window.location.href = 'step15.html';
+    }
+  })
+  container.appendChild(text)
+  container.appendChild(input)
+  document.body.appendChild(container)
+
   document.body.appendChild(canvas)
+  const fadeCanvas = () => {
+    canvas.style.transition = 'opacity 0.5s';
+    canvas.style.opacity = '0';
+    container.style.transition = 'opacity 0.5s';
+    container.style.opacity = '0';
+    setTimeout(() => {
+      canvas.style.opacity = '1';
+      container.style.opacity = '1';
+    }, 1000);
+  };
+
+  fadeCanvas();
   document.body.style = "margin:0;touch-action:none;overflow:hidden"
   canvas.style.width = "100%"
   canvas.style.height = "auto"
