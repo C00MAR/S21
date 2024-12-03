@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: #000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 body input {
   background-color: transparent;
@@ -32,7 +42,7 @@ body .videoYT iframe {
   width: 99dvw;
   height: 99dvh;
 }
-body .setp1 {
+body .setp1, body .step3, body .step4 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -42,6 +52,16 @@ body .setp1 {
   width: 100vw;
   height: 100vh;
   font-size: 2rem;
+}
+body .js-inputTeuf {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  text-align: center;
+  margin-left: 50%;
+  translate: -50%;
 }
 body .popUp {
   background-color: #000;
@@ -68,27 +88,22 @@ body .step2 {
   height: 100vh;
   font-size: 2rem;
 }
-body .step2 .title_def {
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #fff;
-  text-align: center;
-  font-size: 2rem;
-}
 body .step2 .def {
   margin-bottom: 1rem;
   color: #fff;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   width: 80vw;
 }
 body .videoYTEtoile {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000;
+  gap: 1rem;
 }
 body .videoYTEtoile iframe {
   border-radius: 0.1rem;
@@ -108,6 +123,30 @@ body .wait {
   background: black;
   font-family: "Oswald", sans-serif;
   font-style: italic;
+}
+body .btnnext {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+body .newText {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 50vh;
+  translate: 0 -50%;
+  transition: color 0.5s;
+}
+body .newText:hover {
+  color: #000;
+  text-decoration-color: #000;
 }
 
 .container {
@@ -157,189 +196,189 @@ body .wait {
 }
 @keyframes noise-1 {
   3.3333333333% {
-    clip-path: inset(62px 0 18px 0);
+    clip-path: inset(17px 0 82px 0);
   }
   6.6666666667% {
-    clip-path: inset(65px 0 29px 0);
+    clip-path: inset(37px 0 2px 0);
   }
   10% {
-    clip-path: inset(2px 0 53px 0);
+    clip-path: inset(52px 0 43px 0);
   }
   13.3333333333% {
-    clip-path: inset(79px 0 8px 0);
+    clip-path: inset(16px 0 72px 0);
   }
   16.6666666667% {
-    clip-path: inset(85px 0 1px 0);
+    clip-path: inset(51px 0 17px 0);
   }
   20% {
-    clip-path: inset(11px 0 45px 0);
+    clip-path: inset(61px 0 35px 0);
   }
   23.3333333333% {
-    clip-path: inset(89px 0 3px 0);
+    clip-path: inset(2px 0 46px 0);
   }
   26.6666666667% {
-    clip-path: inset(47px 0 12px 0);
+    clip-path: inset(33px 0 19px 0);
   }
   30% {
-    clip-path: inset(8px 0 49px 0);
+    clip-path: inset(89px 0 11px 0);
   }
   33.3333333333% {
-    clip-path: inset(52px 0 40px 0);
+    clip-path: inset(71px 0 9px 0);
   }
   36.6666666667% {
-    clip-path: inset(12px 0 89px 0);
+    clip-path: inset(91px 0 3px 0);
   }
   40% {
-    clip-path: inset(34px 0 59px 0);
+    clip-path: inset(18px 0 50px 0);
   }
   43.3333333333% {
-    clip-path: inset(65px 0 3px 0);
+    clip-path: inset(75px 0 3px 0);
   }
   46.6666666667% {
-    clip-path: inset(75px 0 8px 0);
+    clip-path: inset(94px 0 6px 0);
   }
   50% {
-    clip-path: inset(98px 0 3px 0);
+    clip-path: inset(41px 0 51px 0);
   }
   53.3333333333% {
-    clip-path: inset(5px 0 25px 0);
+    clip-path: inset(18px 0 16px 0);
   }
   56.6666666667% {
-    clip-path: inset(80px 0 8px 0);
+    clip-path: inset(35px 0 2px 0);
   }
   60% {
-    clip-path: inset(80px 0 2px 0);
+    clip-path: inset(98px 0 1px 0);
   }
   63.3333333333% {
-    clip-path: inset(87px 0 13px 0);
+    clip-path: inset(35px 0 12px 0);
   }
   66.6666666667% {
-    clip-path: inset(47px 0 30px 0);
+    clip-path: inset(42px 0 4px 0);
   }
   70% {
-    clip-path: inset(56px 0 14px 0);
+    clip-path: inset(33px 0 6px 0);
   }
   73.3333333333% {
-    clip-path: inset(54px 0 21px 0);
+    clip-path: inset(28px 0 8px 0);
   }
   76.6666666667% {
-    clip-path: inset(61px 0 2px 0);
+    clip-path: inset(25px 0 11px 0);
   }
   80% {
-    clip-path: inset(27px 0 55px 0);
+    clip-path: inset(85px 0 7px 0);
   }
   83.3333333333% {
-    clip-path: inset(47px 0 42px 0);
+    clip-path: inset(14px 0 76px 0);
   }
   86.6666666667% {
-    clip-path: inset(45px 0 56px 0);
+    clip-path: inset(100px 0 1px 0);
   }
   90% {
-    clip-path: inset(77px 0 21px 0);
+    clip-path: inset(93px 0 1px 0);
   }
   93.3333333333% {
-    clip-path: inset(88px 0 4px 0);
+    clip-path: inset(76px 0 11px 0);
   }
   96.6666666667% {
-    clip-path: inset(72px 0 16px 0);
+    clip-path: inset(100px 0 1px 0);
   }
   100% {
-    clip-path: inset(56px 0 6px 0);
+    clip-path: inset(2px 0 51px 0);
   }
 }
 @keyframes noise-2 {
   0% {
-    clip-path: inset(91px 0 6px 0);
+    clip-path: inset(59px 0 16px 0);
   }
   3.3333333333% {
-    clip-path: inset(84px 0 1px 0);
+    clip-path: inset(25px 0 34px 0);
   }
   6.6666666667% {
-    clip-path: inset(85px 0 3px 0);
+    clip-path: inset(2px 0 74px 0);
   }
   10% {
-    clip-path: inset(10px 0 12px 0);
+    clip-path: inset(98px 0 2px 0);
   }
   13.3333333333% {
-    clip-path: inset(78px 0 20px 0);
+    clip-path: inset(32px 0 25px 0);
   }
   16.6666666667% {
-    clip-path: inset(41px 0 2px 0);
+    clip-path: inset(71px 0 21px 0);
   }
   20% {
-    clip-path: inset(40px 0 34px 0);
+    clip-path: inset(72px 0 9px 0);
   }
   23.3333333333% {
-    clip-path: inset(97px 0 3px 0);
+    clip-path: inset(70px 0 29px 0);
   }
   26.6666666667% {
-    clip-path: inset(57px 0 18px 0);
+    clip-path: inset(41px 0 34px 0);
   }
   30% {
-    clip-path: inset(7px 0 54px 0);
+    clip-path: inset(56px 0 5px 0);
   }
   33.3333333333% {
-    clip-path: inset(16px 0 7px 0);
+    clip-path: inset(25px 0 16px 0);
   }
   36.6666666667% {
-    clip-path: inset(67px 0 27px 0);
+    clip-path: inset(17px 0 20px 0);
   }
   40% {
-    clip-path: inset(81px 0 7px 0);
+    clip-path: inset(36px 0 5px 0);
   }
   43.3333333333% {
-    clip-path: inset(80px 0 19px 0);
+    clip-path: inset(52px 0 34px 0);
   }
   46.6666666667% {
-    clip-path: inset(85px 0 5px 0);
+    clip-path: inset(2px 0 75px 0);
   }
   50% {
-    clip-path: inset(73px 0 11px 0);
+    clip-path: inset(62px 0 22px 0);
   }
   53.3333333333% {
-    clip-path: inset(45px 0 38px 0);
+    clip-path: inset(84px 0 12px 0);
   }
   56.6666666667% {
-    clip-path: inset(38px 0 24px 0);
+    clip-path: inset(51px 0 45px 0);
   }
   60% {
-    clip-path: inset(76px 0 4px 0);
+    clip-path: inset(40px 0 5px 0);
   }
   63.3333333333% {
-    clip-path: inset(86px 0 10px 0);
+    clip-path: inset(45px 0 51px 0);
   }
   66.6666666667% {
-    clip-path: inset(24px 0 30px 0);
+    clip-path: inset(63px 0 2px 0);
   }
   70% {
-    clip-path: inset(72px 0 8px 0);
+    clip-path: inset(18px 0 74px 0);
   }
   73.3333333333% {
-    clip-path: inset(20px 0 9px 0);
+    clip-path: inset(97px 0 2px 0);
   }
   76.6666666667% {
-    clip-path: inset(24px 0 10px 0);
+    clip-path: inset(98px 0 2px 0);
   }
   80% {
-    clip-path: inset(87px 0 2px 0);
+    clip-path: inset(31px 0 47px 0);
   }
   83.3333333333% {
-    clip-path: inset(90px 0 3px 0);
+    clip-path: inset(54px 0 15px 0);
   }
   86.6666666667% {
-    clip-path: inset(53px 0 37px 0);
+    clip-path: inset(88px 0 12px 0);
   }
   90% {
-    clip-path: inset(61px 0 23px 0);
+    clip-path: inset(92px 0 7px 0);
   }
   93.3333333333% {
-    clip-path: inset(77px 0 6px 0);
+    clip-path: inset(92px 0 6px 0);
   }
   96.6666666667% {
-    clip-path: inset(55px 0 19px 0);
+    clip-path: inset(42px 0 26px 0);
   }
   100% {
-    clip-path: inset(37px 0 31px 0);
+    clip-path: inset(75px 0 3px 0);
   }
 }
 .scanlines {
