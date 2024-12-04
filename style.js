@@ -26,11 +26,16 @@ function init() {
   const source = document.querySelector("script[type='x-shader/x-fragment']").textContent
   canvas = document.createElement("canvas")
   document.body.innerHTML = ""
+  const audio = document.createElement("audio")
+  audio.controls = true
+  audio.src = "audio.mp3"
+  audio.classList.add("music")
+  document.body.appendChild(audio)
   const container = document.createElement("div")
   container.classList.add("container")
   const text = document.createElement("p")
   text.style.textAlign = "center"
-  text.textContent = "ET L'HOMME CRÉA LE SENS DES MOTS"
+  text.textContent = "L'AMOUR MANUSCRIT"
   const input = document.createElement("input")
   input.type = "text"
   input.placeholder = "code"
