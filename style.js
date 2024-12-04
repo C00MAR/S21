@@ -26,6 +26,11 @@ function init() {
   const source = document.querySelector("script[type='x-shader/x-fragment']").textContent
   canvas = document.createElement("canvas")
   document.body.innerHTML = ""
+  const textElement = document.createElement("p")
+  textElement.textContent = "UNE FOIS L'ÉLÉMENT TROUVER APPUIS SUR PLAY"
+  textElement.classList.add("textfind")
+  textElement.style.textAlign = "center"
+  document.body.appendChild(textElement)
   const audio = document.createElement("audio")
   audio.controls = true
   audio.src = "audio.mp3"
