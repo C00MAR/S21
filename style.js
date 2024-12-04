@@ -1,11 +1,14 @@
 setTimeout(function() {
     const element = document.getElementsByClassName('js-videoStart')[0];
-    element.style.transition = 'opacity 1s';
-    element.style.opacity = '0';
-    setTimeout(function() {
-        element.remove();
-        init();
-    }, 1000);
+    const video = element.getElementsByTagName('video')[0];
+    video.addEventListener('ended', function() {
+        element.style.transition = 'opacity 1s';
+        element.style.opacity = '0';
+        setTimeout(function() {
+            element.remove();
+            init();
+        }, 1000);
+    });
 }, 5000);
 // 96000
 
