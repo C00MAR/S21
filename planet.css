@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    
+    background:
+    repeating-radial-gradient(
+    circle at center,
+      #000 0 10%,
+      #fff 10% 20%
+    );
+    
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+  }
+  
+  canvas {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  

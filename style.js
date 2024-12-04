@@ -2,14 +2,14 @@ setTimeout(function() {
     const element = document.getElementsByClassName('js-videoStart')[0];
     const video = element.getElementsByTagName('video')[0];
     video.addEventListener('ended', function() {
-        element.style.transition = 'opacity 1s';
+        element.style.transition = 'opacity 0.25s';
         element.style.opacity = '0';
         setTimeout(function() {
             element.remove();
             init();
-        }, 1000);
+        }, 500);
     });
-}, 5000);
+}, 500);
 // 96000
 
 function init() {
